@@ -1,0 +1,23 @@
+.header-section {
+    display: flex;
+    height: 336px;
+    background-color: var(--tint-1);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-note {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-note button {
+    margin-top:48px ;
+}

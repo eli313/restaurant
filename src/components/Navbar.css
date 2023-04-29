@@ -1,0 +1,78 @@
+.nav-section {
+    width: 100%;
+    height: 80px;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    margin: .8rem;
+    color: var(--grey-7);
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.navbar-links a:hover {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    font-weight: 600;
+}
+
+.navbar-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navbar-buttons button {
+    background-color: var(--tint-1);
+    border-radius: 4px;
+    width: 40px;
+    margin: 4px;
+}
+
+.navbar-buttons button img {
+    fill: var(--primary);
+}
+
+.navbar-burgerMenu {
+    display: none;
+}
+
+.navbar-burgerMenu div{
+    width: 24px;
+    height: 3px;
+    background-color: var(--primary);
+    margin: .4rem;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:800px) {
+    .navbar-links {
+        display: none;
+    }
+    .navbar-buttons button:first-child {
+        display: none;
+    }
+    .navbar-burgerMenu {
+        display: block;
+    }
+}

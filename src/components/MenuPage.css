@@ -1,0 +1,27 @@
+.menu-section {
+    width: 100%;
+}
+
+.menu-titlebar {
+    width: 100%;
+    background-color: var(--grey-4);
+}
+
+.menu-titlebar_titles {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-right: 64px;
+}
+
+.menu-titlebar_titles div {
+    height: 100%;
+    padding: 16px;
+}
+
+.menu-titlebar_titles div:hover {
+    font-weight: 700;
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}

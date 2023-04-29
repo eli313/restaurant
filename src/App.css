@@ -1,3 +1,45 @@
+:root {
+  /* Primary */
+  --tint-1 : #E5F2E9;
+  --tint-2 : #CAE4D3;
+  --tint-3 : #B0D7BD;
+  --tint-4 : #96C9A7;
+  --tint-5 : #7CBC91;
+  --tint-6 : #61AE7B;
+  --tint-7 : #4E9968;
+  --primary : #417F56;
+  --shade-1 : #396F4B;
+  --shade-2 : #315F41;
+  --shade-3 : #294F36;
+  --shade-4 : #21402B;
+  --shade-5 : #183020;
+  --shade-6 : #102016;
+  --shade-7 : #08100B;
+/* Neutural */
+  --white : #ffffff;
+  --grey-1 : #F9F9F9;
+  --grey-2 : #E1E1E1;
+  --grey-3 : #EDEDED;
+  --grey-4 : #CBCBCB;
+  --grey-5 : #ADADAD;
+  --grey-6 : #757575;
+  --grey-7 : #717171;
+  --grey-8 : #353535;
+  --black : #0C0C0C;
+/* ّFont sizes */
+  --display-1 : 64px;
+  --display-2 : 56px;
+  --body-XL : 20px;
+  --body-LG : 18px;
+  --body-MD : 16px;
+  --body-SM : 14px;
+  --caption-LG : 14px;
+  --caption-MD : 12px;
+  --caption-SM : 10px;
+  --overline-LG : 16px;
+  --overline-SM : 12px;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +77,133 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: "Estedad";
+  src: url("./Assets/Fonts/Estedad-Regular.woff2");
+}
+
+@font-face {
+  font-family: "EstedadBold";
+  src: url("./Assets/Fonts/Estedad-Bold.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
+body {
+  font-family: "Estedad";
+}
+
+a {
+  cursor: pointer;
+  font-size: var(--body-XL);
+}
+
+button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+button.button_normal {
+  background-color: var(--primary);
+  color: var(--white);
+  padding:0 16px;
+}
+
+.button_normal img {
+  fill:  var(--grey-1);
+  padding: 8px;
+}
+
+button.button_normal:hover {
+  background-color: var(--shade-2);
+}
+
+button.button_normal::selection {
+  background-color: var(--shade-3);
+}
+
+button.button_stroke {
+  background-color: #ffffff00;
+  border: 2px solid var(--grey-1);
+  color: var(--grey-1);
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 , h2 ,h3 , h4 , h5 , h6 {
+  line-height: 140%;
+  font-family: "EstedadBold";
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+
+
+@media screen and (max-width:800px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+
+input {
+  all: unset;
+  height: 40px;
+  width: 256px;
+  border: 2px solid var(--grey-7);
+  border-radius: 8px;
+  text-align: end;
+  padding:0 16px;
+  font-size: 16px;
+}
+
+input:hover {
+  border: 2px solid var(--grey-1);
+}
+
+input:focus {
+  border: 2px solid var(--primary);
 }
