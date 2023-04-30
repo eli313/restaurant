@@ -15,7 +15,7 @@ const MenuPage = () => {
                     </div>
                 </div>
                 <div className="menu-cards">
-                    <Cards/>
+                    <Cards/>               
                 </div>
             </div>
         </section>

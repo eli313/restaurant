@@ -25,3 +25,11 @@
     color: var(--primary);
     border-bottom: 3px solid var(--primary);
 }
+
+.menu-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

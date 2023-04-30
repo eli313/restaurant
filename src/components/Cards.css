@@ -1,3 +1,83 @@
 .card {
     width: 600px;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 8px;
+    border: 3px solid var(--grey-2);
+    box-shadow: 6px 6px 6px #00000042 ;
 }
+
+.card-image img {
+    height: 100%;
+}
+
+.card-details {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-areas: "title title like"
+    "discription discription price"
+    "rating button button"; */
+    text-align: start;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.card-details div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+.card-details h3 {
+    grid-area: title;
+    font-size: 20px;
+    font-family: "Estedad";
+}
+
+.card-details p {
+    grid-area: discription;
+    font-size: 14px;
+}
+
+.card-details .card-price {
+    grid-area: price;
+    display: flex;
+    flex-direction: column;
+    margin: -.2rem;
+    text-align: end;
+}
+
+.card-details .card-price span {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.card-details .card-button {
+    width: 100%;
+    grid-area: button;
+}
+.card-button button {
+    width: 100%;
+    padding: 0;
+}
+/* 
+
+
+
+.card-details .card-rating {
+    grid-area: rating;
+}
+
+.card-details .card-details_like {
+    grid-area: like;
+} */
