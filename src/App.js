@@ -1,5 +1,7 @@
 import './App.css';
 import About from './components/About';
+import AddInfo from './components/AddInfo';
+import Cart from './components/Cart';
 import Footer from './components/Footer';
 import HeaderSlider from './components/HeaderSlider';
 import MenuPage from './components/MenuPage';
@@ -9,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <MenuPage/>
+      <AddInfo/>
     </div>
   );
 }

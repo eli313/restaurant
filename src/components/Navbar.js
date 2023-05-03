@@ -10,6 +10,11 @@ const Navbar = () => {
     return ( 
         <section className="nav-section">
             <div className="navbar">
+                <div className="navbar-burgerMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <div>
                     <img src={logo}/>
                 </div>
@@ -33,11 +38,7 @@ const Navbar = () => {
                     <button><img src={cart}/></button>
                     <button><img src={account}/></button>
                 </div>
-                <div className="navbar-burgerMenu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+                
             </div>
         </section>
      );

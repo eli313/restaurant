@@ -15,12 +15,16 @@
     padding-right: 64px;
 }
 
-.menu-titlebar_titles div {
+.menu-titlebar_titles h3 {
     height: 100%;
     padding: 16px;
+    font-size: var(--body-XL);
+    color: var(--grey-7);
+    font-weight: 100;
 }
 
-.menu-titlebar_titles div:hover {
+.menu-titlebar_titles h3:hover {
+    cursor: pointer;
     font-weight: 700;
     color: var(--primary);
     border-bottom: 3px solid var(--primary);
@@ -32,4 +36,37 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+.menu-search {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .menu-titlebar_titles h3 {
+        font-size: var(--caption-MD);
+    }
+    .menu-search {
+        display: block;
+        margin: 16px 0;
+        width: 100%;
+    }
+
+    .menu-search img {
+        position: absolute;
+        padding: 10px;
+        color: green;
+        min-width: 40px;
+        text-align: center;
+        transform: translateX(45px);
+        cursor: pointer;
+    }
+
+    .menu-search input {
+        border: 2px solid var(--grey-4); 
+    }
+    .menu-search input:focus {
+        border: 2px solid var(--primary);
+        text-align: right;
+    }
 }

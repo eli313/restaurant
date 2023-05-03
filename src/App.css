@@ -133,6 +133,7 @@ button.button_normal {
 
 button.button_normal:hover {
   background-color: var(--shade-2);
+  cursor: pointer;
 }
 
 button.button_normal::selection {
@@ -150,7 +151,7 @@ button.button_stroke {
 
 h1 , h2 ,h3 , h4 , h5 , h6 {
   line-height: 140%;
-  font-family: "EstedadBold";
+  /* font-family: "EstedadBold"; */
 }
 
 h1 {
@@ -198,6 +199,7 @@ input {
   text-align: end;
   padding:0 16px;
   font-size: 16px;
+  text-align: right;
 }
 
 input:hover {
@@ -206,4 +208,14 @@ input:hover {
 
 input:focus {
   border: 2px solid var(--primary);
+}
+
+input::placeholder {
+  text-align: right;
+}
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
 }
